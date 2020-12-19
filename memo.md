@@ -34,10 +34,6 @@ partition loop {
 
 ## Git
 
-実際の開発時によくやりそうなこと
-
-開発用ブランチ作成→開発用ブランチにadd,commit→リモートにpush→作業用ローカルブランチを削除
-
 1. masterブランチから作業用ブランチを切る(ローカル)
 
    ```bash
@@ -60,7 +56,7 @@ partition loop {
    ```
 
 3. リモートリポジトリでマージする
-<br>
+
 4. ローカルとリモートを同期する
 
     ```bash
@@ -70,21 +66,4 @@ partition loop {
     git pull origin master
     #不要なbranchを削除
     git branch -d new_branch
-    ```
-
-5. 覚えておくといいやつ
-
-    ```bash
-    #ローカルのブランチを確認する
-    git branch
-    #リモートブランチを確認する
-    git remote
-    #ローカルのブランチ切替
-    git checkout '対象のブランチ'
-    #ステージング状況を確認する
-    git status
-    #リモートブランチの切替
-    git xxx
-    #リモートブランチの削除
-    git remote rm '対象のリモートブランチ'
     ```
