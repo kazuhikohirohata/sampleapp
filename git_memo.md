@@ -1,42 +1,11 @@
-# Pythonの学習フロー
 
----
-
-## 事前準備
-
-- pythonのインストール
-- GitHubアカウントの作成
-- VScodeで色々書いてみる(UML,Markdown)
-
-## 学習の流れ
-
-1. progateでガチャガチャやってみる
-2. ローカルで書いてみる
-3. GitHubアカウントにぶちこむ
-
-```puml
-
-(*) --> "pythonでなんか書く"
-partition loop {
-"pythonでなんか書く" --> "Githubにコミット、プッシュ"
-"Githubにコミット、プッシュ" --> "プルリク"
-}
-"プルリク" --> "確認"
-```
-
-- Djyangoの参考サイトは[ここ](https://docs.djangoproject.com/ja/3.1/intro/tutorial01/)がよさそう
-- つづけてみる
-
-##　学習メモ
-
-- アノテーション
-→コードの注釈(@xxxxのような感じ)
-
-## Git
+# Git
 
 実際の開発時によくやりそうなこと
 
 開発用ブランチ作成→開発用ブランチにadd,commit→リモートにpush→作業用ローカルブランチを削除
+
+事前：git cloneしておく
 
 1. masterブランチから作業用ブランチを切る(ローカル)
 
@@ -82,9 +51,10 @@ partition loop {
     #ローカルのブランチ切替
     git checkout '対象のブランチ'
     #ステージング状況を確認する
-    git status
+    git status    
     #リモートブランチの切替
     git xxx
+    →使うか？
     #リモートブランチの削除
     git remote rm '対象のリモートブランチ'
     ```
